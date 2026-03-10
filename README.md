@@ -26,5 +26,10 @@
 
 3. No its not reproducible at build time because shasum -a 512 montecarlo-pi of two different executable of the same source code are not the same, to correct that we need to remove all the part that use macros (__DATE__ and __TIME__)
 
+4. No its not reproducible at run time because different executions of the same compiled source
+code do not produce exactly the same output result. To make it reproducible at run time we need to remove all the code that rely on time and the print of time execution
+
+5. the file montecarlo-pi-runRepro.c is already reproducible at run time and build time
+
 
 
