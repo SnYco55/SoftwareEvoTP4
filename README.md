@@ -1,18 +1,27 @@
 # SoftwareEvoTP4
+## 1.2.4 Questions
+1. its almost impossible, which make SHA-256 a reliable cryptographic hash function for now.
+2. "aac" and "ada" are two different strings that give the same checksum so its a collision.
+3. It is not recommended because tools like TAR or Gzip include variable metadata (timestamps, file order,...), which changes the resulting hash even if the file content remains identical.
+
 ## 2.2.1 Questions
 
-1.
-2.
-3. No because its not build time reproducible
-4. yes becuase its run time reproducible
-5. the output can be different because of the different archite
+1. size :
+    text    data     bss     dec     hex filename
+    1065     532       4    1601     641 hello-world
+   permissions : -rwxr-xr-x
+   yes the build generate the executable
+
+2. its different because it depend of the time when it was build
+3. No because its not build time reproducible, the build depend of the time when its built
+4. yes because its run time reproducible. Once its built the time is fixed during and the output when running multiples times is the same
+5. the output can be different because of the different architecture
 6. Not a good idea because of 5.
 
 ## 2.3.1 Questions
 
-1.
-2. yes it always gives the same output, because its randomness reproducible
-
+1. The output are the same, and its because rand() use a seed that are the same for every of us
+2. yes it always gives the same output, because of the same seed, its randomness reproducible
 
 ## 2.4.1 Questions
 
@@ -30,6 +39,11 @@
 code do not produce exactly the same output result. To make it reproducible at run time we need to remove all the code that rely on time and the print of time execution
 
 5. the file montecarlo-pi-runRepro.c is already reproducible at run time and build time
+
+## 3.3.1 Questions
+
+1. we need 2 parameters as the same as before, it shows us that Docker do not change that
+
 
 
 
