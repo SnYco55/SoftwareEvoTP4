@@ -7,16 +7,18 @@
 ## 2.2.1 Questions
 
 1. size :
-    text    data     bss     dec     hex filename
-    1065     532       4    1601     641 hello-world
+    | text | data | bss | dec | hex | filename |
+    |------|------|-----|-----|-----|----------|
+    | 1065 | 532  | 4   | 1601| 641 | hello-world |
+   
    permissions : -rwxr-xr-x
    yes the build generate the executable
 
-2. its different because it depend of the time when it was build
-3. No because its not build time reproducible, the build depend of the time when its built
-4. yes because its run time reproducible. Once its built the time is fixed during and the output when running multiples times is the same
-5. the output can be different because of the different architecture
-6. Not a good idea because of 5.
+3. its different because it depend of the time when it was build
+4. No because its not build time reproducible, the build depend of the time when its built
+5. yes because its run time reproducible. Once its built the time is fixed during and the output when running multiples times is the same
+6. the output can be different because of the different architecture
+7. Not a good idea because of 5.
 
 ## 2.3.1 Questions
 
